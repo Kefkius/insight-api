@@ -143,6 +143,17 @@ if (config.enableMonitor) {
   require('./plugins/monitor').init(config.monitor);
 }
 
+if (config.enableCredentialstore) {
+  require('./plugins/credentialstore').init(expressApp, config.credentialstore);
+}
+
+if (config.enableEmailstore) {
+  require('./plugins/emailstore').init(expressApp, config.emailstore);
+}
+
+if (config.enablePublicInfo) {
+  require('./plugins/publicInfo/publicInfo').init(expressApp, config.emailstore);
+}
 
 // express settings
 require('./config/express')(expressApp, historicSync, peerSync);
