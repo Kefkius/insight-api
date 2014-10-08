@@ -60,7 +60,7 @@
     "async": "*",
     "base58-native": "0.1.2",
     "bignum": "*",
-    "mazacore": "git://github.com/mazacoin/mazacore.git",
+    "mazacore": "git://github.com/kefkius/mazacore.git#mergeup",
     "bitauth": "^0.1.1",
     "bufferput": "git://github.com/bitpay/node-bufferput.git",
     "buffertools": "*",
